@@ -2,9 +2,9 @@ backend:
   name: git-gateway
   branch: master
   commit_messages:
-    create: "Create {{collection}} “{{slug}}”"
-    update: "Update {{collection}} “{{slug}}”"
-    delete: "Delete {{collection}} “{{slug}}”"
+    create: "Создать {{collection}} “{{slug}}”"
+    update: "Обновить {{collection}} “{{slug}}”"
+    delete: "Удалить {{collection}} “{{slug}}”"
     uploadMedia: "[skip ci] Upload “{{path}}”"
     deleteMedia: "[skip ci] Delete “{{path}}”"
 
@@ -26,13 +26,13 @@ collections:
           widget: "hidden",
           default: "blog-post",
         }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
-      - { label: "Featured Image", name: "featuredimage", widget: image }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Заголовок", name: "title", widget: "string" }
+      - { label: "Дата публикации", name: "date", widget: "datetime" }
+      - { label: "Описание", name: "description", widget: "text" }
+      - { label: "Лучший пост", name: "featuredpost", widget: "boolean" }
+      - { label: "Популярное изображение", name: "featuredimage", widget: image }
+      - { label: "Сообщение", name: "body", widget: "markdown" }
+      - { label: "Метки", name: "tags", widget: "list" }
 
   - name: "pages"
     label: "Pages"
